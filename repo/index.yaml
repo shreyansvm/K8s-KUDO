@@ -1,0 +1,9 @@
+apiVersion: v1
+entries:
+  first-operator:
+  - digest: 41b785cdd8f2bc91fed3aefe7f40dafadc450b5df505ae5c692680c77e73eb46
+    name: first-operator
+    operatorVersion: 0.1.0
+    urls:
+    - http://localhost/first-operator-0.1.0.tgz
+generated: "2020-06-23T17:16:34.227941-07:00"
