@@ -1,0 +1,21 @@
+apiVersion: kudo.dev/v1beta1
+kudoVersion: 0.14.0
+kubernetesVersion: 1.10.11
+name: first-operator
+operatorVersion: 0.1.0
+plans:
+  deploy:
+    phases:
+    - name: main
+      steps:
+      - name: everything
+        tasks:
+        - myapp
+      strategy: parallel
+    strategy: serial
+tasks:
+- kind: Apply
+  name: myapp
+  spec:
+    resources:
+    - deployment.yaml

@@ -1,0 +1,5 @@
+apiVersion: kudo.dev/v1beta1
+parameters:
+- default: "3"
+  description: number of app replicas
+  name: replicas
